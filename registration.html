@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>MRD Form</title>
+
+  <!-- Meta -->
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Membership Recruitment Drive">
+  <meta name="author" content="Spadelpu">
+  <link rel="shortcut icon" href="logo.png">
+  <style>
+    @import 'https://cdnjs.cloudflare.com/ajax/libs/bootswatch/4.6.0/yeti/bootstrap.min.css';
+
+    form label {
+      cursor: pointer;
+    }
+  </style>
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+
+
+</head>
+
+<!-- <body style="background-image:url('assets/images/spadecover.jpg'); background-repeat:no-repeat; background-attachment: fixed; background-position: center;"> -->
+  <body style="background: #ed6524;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-10">
+        <div class="card shadow my-5">
+          <h2 class="card-header text-center">Registration Form</h2>
+          <div class="card-body">
+
+            <form id="form1" name="form1" method="POST">
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-control border" required placeholder="Enter Your Full Name">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="regno">Registration Number</label>
+                    <input type="text" id="regno" name="regno" class="form-control border" required placeholder="Enter Registration Nmber">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="phone">Contact Number</label>
+                    <input type="text" id="phone" name="phone" class="form-control border" required placeholder="Enter your Contact Number" >
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="email">Email ID</label>
+                    <input type="email" id="email" name="email" class="form-control border" required placeholder="Enter your Mail ID">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="whtnumber">WhatsApp Number</label>
+                    <input type="text" id="whtnumber" name="whtnumber" class="form-control border" required placeholder="Enter your Whatsapp Number">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="course">Course</label>
+                    <input type="text" id="course" name="course" class="form-control border" required placeholder="Example(Btech - CSE)">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="cgpa">CPGA</label>
+                    <input type="text" id="cgpa" name="cgpa" class="form-control border" required placeholder="Enter your Current CGPA">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <!-- <label for="course">Course</label>
+                    <input type="text" id="course" name="course" class="form-control border">
+                    
+                    <small class="form-text text-danger feedback"></small> -->
+                    <label for="domain">Field of Interest</label>
+
+                    <select name="domain" id="domain" required class="form-control border">
+                      <option value="">select your domain</option>
+                      <option value="creativity">Creativity</option>
+                      <option value="Marketing">Marketing and Sponsorship</option>
+                      <option value="DM">Social Media and Digital Marketing</option>
+                      <option value="HRM">Human Resource</option>
+                      <option value="pr">Public Relations</option>
+                      <option value="Video">Video Editing</option>
+                      <option value="GD">Graphic Designing</option>
+                      <option value="PD">Planning and Development</option>
+                      <option value="rnd">Research and Development</option>
+                      <option value="WD">Web Development</option>
+                      <option value="CW">Content Writing</option>
+                      <option value="EV">Event Management</option>
+                      <option value="PS">Public Speaking</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row justify-content-center">
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="school">School</label>
+                    <input type="text" id="school" name="school" class="form-control border" required placeholder="Enter your school (eg - School of Computer Science)">
+                    <small class="form-text text-danger feedback"></small>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-group">
+                    <label for="gender">Gender</label>
+                    <select name="gender" id="gender" required class="form-control border">
+                      <option value="">select your gender</option>
+                      <option value="Female">Female</option>
+                      <option value="Male">Male</option>
+                      <option value="PNS">Prefer not to say</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Why do you want to join Spade ?</label>
+                <textarea name="message" id="message" class="form-control border" required placeholder="I want to join SPADE because ..."></textarea>
+                <!-- <input type="text" id="text" name="text" class="form-control border" > -->
+                <small class="form-text text-danger feedback"></small>
+              </div>
+
+              <button type="submit" class="btn btn-outline-dark button" name="btn" style="width:100%;" >Submit</button>
+            </form>
+          </div>
+          <div class="card-footer"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbyFkuLv0c3iFvoiBJMN2JokjMh7955WjFRCN3EeooZeJz20otuyyAYjlWw8ALRyN35l/exec'
+    const form = document.forms['form1']
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => alert("Thanks for Registering We Will Contact You Soon..."))
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
