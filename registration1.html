@@ -18,11 +18,11 @@
 		<h1>Registration Form</h1>
 		<div class="main-agileinfo">
 			<div class="agileits-top">
-				<form action="#" method="post">
-					<input class="text" type="text" name="Username" placeholder="Name" required="">
+				<form id="form1" name="form1" method="POST">
+					<input class="text" type="text" name="name" placeholder="Name" required="">
 					<input class="text email" type="email" name="email" placeholder="Email" required="">
-					<input class="text" type="text" name="Contact" placeholder="Contact No." required="">
-                    <input class="text w3lpass" type="text" name="Institutename" placeholder="Institute Name" required="">
+					<input class="text" type="text" name="contact" placeholder="Contact No." required="">
+                    <input class="text w3lpass" type="text" name="institutename" placeholder="Institute Name" required="">
                     <input class="text w3lpass" type="text" name="year" placeholder="Year" required="">
 					<div class="wthree-text">
 						<label class="anim">
@@ -49,6 +49,20 @@
 			<li></li>
 		</ul>
 	</div>
+	<script>
+		const scriptURL = 'https://script.google.com/macros/s/AKfycbyFkuLv0c3iFvoiBJMN2JokjMh7955WjFRCN3EeooZeJz20otuyyAYjlWw8ALRyN35l/exec'
+		const form = document.forms['form1']
+	  
+		form.addEventListener('submit', e => {
+		  e.preventDefault()
+		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+			.then(response => alert("Thanks for Registering We Will Contact You Soon..."))
+			.catch(error => console.error('Error!', error.message))
+		})
+
+		
+	  </script>
+	  
 	<!-- //main -->
 </body>
 </html>
