@@ -36,18 +36,7 @@
 			</div>
 		</div>
 		<!-- //copyright -->
-		<ul class="colorlib-bubbles">
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-		</ul>
+		
 	</div>
 	<script>
 		const scriptURL = 'https://script.google.com/macros/s/AKfycbyFkuLv0c3iFvoiBJMN2JokjMh7955WjFRCN3EeooZeJz20otuyyAYjlWw8ALRyN35l/exec'
@@ -56,7 +45,10 @@
 		form.addEventListener('submit', e => {
 		  e.preventDefault()
 		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-			.then(response => alert("Thanks for Registering We Will Contact You Soon..."))
+			.then(response => {
+			  alert("Thanks for Registering We Will Contact You Soon...")
+			  form.reset()
+		  })
 			.catch(error => console.error('Error!', error.message))
 		})
 
