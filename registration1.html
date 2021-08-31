@@ -40,9 +40,10 @@
 		  e.preventDefault()
 		  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
 			.then(response => {
-				alert("Thanks for Registering We Will Contact You Soon...")
-				form.reset()
-			})
+              alert("Thanks for Registering We Will Contact You Soon...")
+			  form.reset()
+		  })
+
 			.catch(error => console.error('Error!', error.message))
 			
 		})
@@ -54,4 +55,3 @@
 </body>
 </html>
 
-			
