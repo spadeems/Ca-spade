@@ -142,9 +142,9 @@ blockquote > cite {font-weight: 400;font-size: 14px;display: block;}
 
 .gradient-bg1{
     background: #3264f5;
-    background: -moz-linear-gradient(left, #3264f5 2%, #7004bc 82%);
+    /* background: -moz-linear-gradient(left, #3264f5 2%, #7004bc 82%);
     background: -webkit-linear-gradient(left, #3264f5 2%,#7004bc 82%);
-    background: linear-gradient(to right, #3264f5 2%,#7004bc 82%);
+    background: linear-gradient(to right, #3264f5 2%,#7004bc 82%); */
 }
 
 .gradient-bg2{
@@ -352,9 +352,9 @@ header a.logo img {max-width: 150px;}
 
 .header-appear .navbar-top-default.navbar-gradient {
     background: #3264f5;
-    background: -moz-linear-gradient(left, #7004bc 2%, #3264f5 82%);
+    /* background: -moz-linear-gradient(left, #7004bc 2%, #3264f5 82%);
     background: -webkit-linear-gradient(left, #7004bc 2%, #3264f5 82%);
-    background: linear-gradient(to right, #7004bc 2%, #3264f5 82%);
+    background: linear-gradient(to right, #7004bc 2%, #3264f5 82%); */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3264f5', endColorstr='#7004bc',GradientType=1 );
 }
 
