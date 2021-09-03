@@ -20,9 +20,10 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 }
 
 .form-image{
-  padding-left: 40px;
-  padding-right: 40px;
-  max-width: 42%;
+  
+  padding-left: 22px;
+  max-width: 40%;
+
 }
 
 ol, ul {
@@ -182,6 +183,7 @@ input[type="text"], input[type="email"], input[type="password"] {
 ::placeholder{
   color: #000;
 }
+
 input.email, input.text.w3lpass {
   margin: 2em 0;
 }
@@ -224,7 +226,6 @@ input.email, input.text.w3lpass {
 
 input[type="submit"] {
   font-size: .9em;
-  
   color: #fff;
   background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
   background-position: right;
