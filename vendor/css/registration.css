@@ -11,6 +11,19 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   display: block;
 }
 
+.form-component{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  
+}
+
+.form-image{
+  padding-left: 22px;
+  max-width: 40%;
+}
+
 ol, ul {
   list-style: none;
   margin: 0px;
@@ -102,13 +115,14 @@ img {
 
 /*-- end reset --*/
 body {
-  background: #76b852;
+  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
   /* fallback for old browsers */
   /* background: -webkit-linear-gradient(to top, #76b852, #8DC26F);
   background: -moz-linear-gradient(to top, #76b852, #8DC26F);
   background: -o-linear-gradient(to top, #76b852, #8DC26F);
   background: linear-gradient(to top, #76b852, #8DC26F); */
-  background: linear-gradient(to top right,#fc2c77 0%,#6c4079 100%);
+
+
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
@@ -126,7 +140,7 @@ h1 {
 
 /*-- main --*/
 .main {
-  padding: 3em 0 1em;
+  padding: 0em 0 1em;
 }
 
 .main-agileinfo {
@@ -204,8 +218,10 @@ input.email, input.text.w3lpass {
 
 input[type="submit"] {
   font-size: .9em;
-  color: linear-gradient(to top right,#fc2c77 0%,#6c4079 100%);
-  background: #fff;
+
+  color: #fff;
+  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
+  background-position: right;
   outline: none;
   border: 1px solid #76b852;
   cursor: pointer;
@@ -222,7 +238,7 @@ input[type="submit"]:hover {
   -o-transition: .5s all;
   -ms-transition: .5s all;
   transition: .5s all;
-  background: #8DC26F;
+  background: #537aee;
 }
 
 .agileits-top p {
