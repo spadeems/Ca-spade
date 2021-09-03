@@ -1339,7 +1339,7 @@ span.anchor-circle{
 
 .team-item .name > h6{
     font-size: 23px;
-    margin: 75px;
+    margin: 0 75px;
     position: relative;
     width: 70%;
     top: 50%;
