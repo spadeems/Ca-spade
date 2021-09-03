@@ -1316,6 +1316,7 @@ span.anchor-circle{
 
 .team-item .name{
     position: relative;
+    
 }
 
 .team-item .designation{
@@ -1366,6 +1367,12 @@ span.anchor-circle{
 
 .team-item:hover .name > h6{
     color: #fff;
+    background-color: #000000;
+    border-right-width: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 30px;
+  
 }
 
 .team-item .team-social a i {

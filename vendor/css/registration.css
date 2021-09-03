@@ -16,12 +16,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  
+
 }
 
 .form-image{
-  padding-left: 22px;
-  max-width: 50%;
+  padding-left: 40px;
+  padding-right: 40px;
+  max-width: 42%;
 }
 
 ol, ul {
@@ -115,15 +116,18 @@ img {
 
 /*-- end reset --*/
 body {
-  background: #a5dbdb;
+  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
   /* fallback for old browsers */
   /* background: -webkit-linear-gradient(to top, #76b852, #8DC26F);
   background: -moz-linear-gradient(to top, #76b852, #8DC26F);
   background: -o-linear-gradient(to top, #76b852, #8DC26F);
   background: linear-gradient(to top, #76b852, #8DC26F); */
+
+
   background-size: cover;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;
+
 }
 
 h1 {
@@ -133,12 +137,14 @@ h1 {
   font-weight: 100;
   text-transform: capitalize;
   letter-spacing: 4px;
-  font-family: 'Roboto', sans-serif;
+ 
+  /* font-family: 'Roboto', sans-serif; */
+  font-family: 'Hina Mincho', serif;
 }
 
 /*-- main --*/
 .main {
-  padding: 3em 0 1em;
+  padding: 0em 0 1em;
 }
 
 .main-agileinfo {
@@ -146,6 +152,7 @@ h1 {
   margin: 3em auto;
   background: rgba(0, 0, 0, 0.18);
   background-size: cover;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 .agileits-top {
@@ -160,7 +167,7 @@ input[type="text"], input[type="email"], input[type="password"] {
   display: block;
   border: none;
   padding: 0.8em;
-  border: solid 1px rgba(255, 255, 255, 0.37);
+  border-bottom: solid 1px rgba(255, 255, 255, 0.37);
   -webkit-transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   transition: all 0.3s cubic-bezier(0.64, 0.09, 0.08, 1);
   background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0) 96%, #fff 4%);
@@ -169,9 +176,12 @@ input[type="text"], input[type="email"], input[type="password"] {
   background-size: 100%;
   background-repeat: no-repeat;
   color: #fff;
-  font-family: 'Roboto', sans-serif;
+  /* font-family: 'Roboto', sans-serif; */
+   font-family: 'Indie Flower', cursive;
 }
-
+::placeholder{
+  color: #000;
+}
 input.email, input.text.w3lpass {
   margin: 2em 0;
 }
@@ -214,14 +224,17 @@ input.email, input.text.w3lpass {
 
 input[type="submit"] {
   font-size: .9em;
+  
   color: #fff;
-  background: #3264f5;
+  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
+  background-position: right;
   outline: none;
   border: 1px solid #76b852;
   cursor: pointer;
   padding: 0.9em;
+  border-radius: 30px;
   -webkit-appearance: none;
-  width: 100%;
+  width: 30%;
   margin: 2em 0;
   letter-spacing: 4px;
 }
