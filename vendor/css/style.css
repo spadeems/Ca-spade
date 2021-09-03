@@ -1339,9 +1339,9 @@ span.anchor-circle{
 
 .team-item .name > h6{
     font-size: 23px;
-    margin: 0;
-    position: absolute;
-    width: 100%;
+    margin: 75px;
+    position: relative;
+    width: 70%;
     top: 50%;
     font-weight: 400;
     transform: translateY(-50%);
@@ -1367,7 +1367,9 @@ span.anchor-circle{
 
 .team-item:hover .name > h6{
     color: #fff;
-    background-color: #000000;
+    background: #0f0c29;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #24243e, #302b63, #0f0c29);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #24243e, #302b63, #0f0c29); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     border-right-width: 30px;
     padding-top: 10px;
     padding-bottom: 10px;
