@@ -118,7 +118,8 @@ img {
 
 /*-- end reset --*/
 body {
-  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
+  /* background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg); */
+  background: linear-gradient(to top right,#fc2c77 0%,#6c4079 100%);
   /* fallback for old browsers */
   /* background: -webkit-linear-gradient(to top, #76b852, #8DC26F);
   background: -moz-linear-gradient(to top, #76b852, #8DC26F);
@@ -152,7 +153,8 @@ h1 {
 .main-agileinfo {
   width: 35%;
   margin: 3em auto;
-  background: rgba(0, 0, 0, 0.18);
+  background-image: url(https://colorlib.com/etc/lf/Login_v4/images/bg-01.jpg);
+  background-position: top;
   background-size: cover;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
