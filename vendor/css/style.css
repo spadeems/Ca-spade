@@ -3273,7 +3273,7 @@ input.inputerror, textarea.inputerror, select.inputerror {
 @media screen and (max-width:767px){
 
     section, .section-padding{
-        padding: 4.5rem 0;
+        padding: 0 0;
     }
 
     #services .col-md-3:not(:nth-last-child(1)) .process-wrapp {
