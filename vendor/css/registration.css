@@ -181,7 +181,8 @@ input[type="text"], input[type="email"], input[type="password"] {
   background-repeat: no-repeat;
   color: #fff;
   /* font-family: 'Roboto', sans-serif; */
-   font-family: 'Indie Flower', cursive;
+   /*font-family: 'Indie Flower', cursive;*/
+   font-family: "Times New Roman", Times, serif;
 }
 ::placeholder{
   color: #000;
